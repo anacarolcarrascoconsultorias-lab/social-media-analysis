@@ -1,179 +1,165 @@
-Social Media Engagement Analysis
+# **Social Media Engagement Analysis**
 
 This project simulates a social media dataset and performs a complete end-to-end data analysis workflow. It includes data generation, exploration, cleaning, visualization, and statistical insights, following industry-standard analytical practices. The goal is to demonstrate proficiency in Python, Pandas, Seaborn, and general data-analysis methodology while preparing a professional-grade portfolio artifact.
 
-📌 Project Objectives
+---
 
-Generate a synthetic dataset representing social media posts.
+## 📌 **Project Objectives**
 
-Load and explore the dataset using Pandas.
+- Generate a synthetic dataset representing social media posts.  
+- Load and explore the dataset using Pandas.  
+- Clean and prepare the data according to analytical best practices.  
+- Visualize engagement distributions and category-level performance.  
+- Compute statistical summaries and interpret engagement behavior.  
+- Document conclusions and propose future enhancements.
 
-Clean and prepare the data according to analytical best practices.
+---
 
-Visualize engagement distributions and category-level performance.
-
-Compute statistical summaries and interpret engagement behavior.
-
-Document conclusions and propose future enhancements.
-
-📂 Dataset Description
+## 📂 **Dataset Description**
 
 The dataset is artificially generated using:
 
-500 posts
-
-Date
-
-Category (e.g., Food, Travel, Fashion, Music, etc.)
-
-Likes (random integer between 0 and 10,000)
+- **500 posts**  
+- **Date**  
+- **Category** (e.g., Food, Travel, Fashion, Music, etc.)  
+- **Likes** (random integer between 0 and 10,000)
 
 Since the dataset is synthetic, it allows complete control over structure and variability while remaining realistic enough for practical analysis demonstrations.
 
-🛠️ Technologies Used
+---
 
-Python 3.x
+## 🛠️ **Technologies Used**
 
-Pandas
+- Python 3.x  
+- Pandas  
+- NumPy  
+- Seaborn  
+- Matplotlib  
+- Google Colab / Jupyter Notebook  
 
-NumPy
+---
 
-Seaborn
+## 🧪 **Methodology**
 
-Matplotlib
+### **1. Data Generation**
 
-Google Colab / Jupyter Notebook
+Using Python’s `pandas`, `numpy`, and `random` libraries, the project generates:
 
-🧪 Methodology
-1. Data Generation
+- 500 sequential dates  
+- 500 randomly selected categories  
+- Random like counts between 0 and 10,000  
 
-Used Python’s libraries (pandas, numpy, random) to randomly generate:
+These components are assembled into a Pandas DataFrame.
 
-500 sequential dates
+---
 
-500 categories selected randomly from a predefined list
-
-Random like counts between 0 and 10,000
-
-All values were assembled into a Pandas DataFrame.
-
-2. Exploratory Data Analysis (EDA)
+### **2. Exploratory Data Analysis (EDA)**
 
 Performed structural and statistical review using:
 
-df.head()
+- `df.head()`  
+- `df.info()`  
+- `df.describe()`  
+- Category frequency counts  
 
-df.info()
+Although the dataset contained no missing values, cleaning steps were applied as part of best practices.
 
-df.describe()
+---
 
-Category frequency counts
+### **3. Data Cleaning**
 
-The dataset showed no missing values but followed through with standard cleaning steps for good analytical practice.
+- Removed null values  
+- Removed duplicate rows  
+- Converted `Date` to datetime format  
+- Ensured `Likes` column was stored as an integer  
 
-3. Data Cleaning
+This prepared the dataset for visualization and analysis.
 
-Applied the following:
+---
 
-Removal of null values
+### **4. Data Visualization**
 
-Removal of duplicate rows
+Two primary visual techniques were used:
 
-Conversion of Date to datetime
+#### 📈 **Histogram — Distribution of Likes**
+Visualizes how engagement values are spread across posts.
 
-Enforcement of integer type for Likes
+#### 📦 **Boxplot — Likes by Category**
+Compares engagement across content categories and highlights mean values.
 
-This ensured consistency prior to visualization and analysis.
+Visualizations were created using Seaborn and Matplotlib with clean, portfolio-ready styling.
 
-4. Data Visualization
+---
 
-Two main visual techniques were used:
+### **5. Statistical Analysis**
 
-Histogram — Distribution of Likes
+- Computed the overall mean of likes  
+- Calculated mean likes per category  
+- Interpreted engagement variability and category-level performance  
 
-Shows how engagement values are spread across posts.
+---
 
-Boxplot — Likes by Category
+## 📊 **Key Insights**
 
-Compares engagement behavior across content categories while highlighting mean values.
+- Like counts show wide variability across posts.  
+- No category dominates engagement, though subtle performance differences exist.  
+- Engagement metrics can effectively guide content strategy decisions.  
+- Synthetic data still demonstrates real-world analytical workflow patterns.
 
-Both visualizations use Seaborn and Matplotlib with a clean, professional styling suitable for portfolio purposes.
+---
 
-5. Statistical Analysis
+## 🧾 **Conclusion**
 
-Calculated overall mean of likes
+This project demonstrates an end-to-end analytical workflow, including:
 
-Calculated mean likes per category using Pandas groupby
-
-Interpreted patterns related to engagement variability and category performance
-
-📊 Key Insights
-
-Like counts are widely distributed, indicating high variability in post performance.
-
-No category shows overwhelming dominance, but subtle differences in central tendency and spread highlight potential trends.
-
-The dataset demonstrates how engagement metrics can be compared and summarized to support content strategy.
-
-Even with synthetic data, the workflow mirrors real-world analysis used in digital marketing and social media analytics.
-
-🧾 Conclusion
-
-This project demonstrates end-to-end capability in designing, structuring, and analyzing a dataset using Python. It integrates essential components of data analytics:
-
-Data generation
-
-Exploration
-
-Cleaning
-
-Visualization
-
-Insight extraction
+- Data generation  
+- Data exploration  
+- Data cleaning  
+- Visualization  
+- Insight extraction  
 
 The workflow reflects professional analytical standards and is suitable for inclusion in a data analytics portfolio.
 
-A full written conclusion is included inside the notebook as part of Task 6.
+A detailed written conclusion is included inside the notebook under Task 6.
 
-🚀 Future Improvements
+---
 
-Future enhancements may include:
+## 🚀 **Future Improvements**
 
-Introducing additional engagement metrics (comments, shares, sentiment).
+Potential enhancements include:
 
-Incorporating posting time for time-series analysis.
+- Adding extra engagement metrics (comments, shares, sentiment).  
+- Incorporating posting time for time-series trends.  
+- Creating predictive models for post engagement.  
+- Introducing noise to simulate realistic messy data.  
+- Developing dashboards with Plotly or Dash.  
+- Expanding dataset size for deeper analysis.
 
-Creating predictive models for post performance.
+---
 
-Simulating more realistic noise and constructing advanced cleaning workflows.
+## ▶️ **How to Run This Project**
 
-Building interactive dashboards with Plotly or Dash.
+1. Clone or download the repository.  
+2. Open the notebook in **Google Colab** or **Jupyter Notebook**.  
+3. Install required dependencies:
 
-Scaling dataset size for more robust statistical analysis.
+   ```bash
+   pip install pandas numpy seaborn matplotlib
+4. Run each cell in order.
+5. Review visualizations and conclusions at the end of the notebook.
 
-▶️ How to Run This Project
+---
 
-Clone or download the repository.
-
-Open the notebook in Google Colab or Jupyter Notebook.
-
-Install required dependencies if necessary:
-
-pip install pandas numpy seaborn matplotlib
-
-
-Run each cell in sequential order.
-
-Review visualizations and conclusions at the end of the notebook.
-
-📁 Repository Structure
+## 📁 **Repository Structure**
+ ```bash
 📦 social-media-analysis
  ┣ 📄 README.md
- ┣ 📄 social-media-analysis.ipynb   # main notebook
- ┗ 📁 images/                        # optional: exported charts
+ ┣ 📄 social-media-analysis.ipynb   
+ ┗ 📁 images/
+
+---
 
 👩‍💻 Author
 
-Ana Carolina Carrasco
-Data Analytics Portfolio Project
-2025
+**Ana Carolina Carrasco**
+Data Analytics Portfolio Project – 2025
