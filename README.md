@@ -1,4 +1,8 @@
-# **Social Media Engagement Analysis**
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anacarolcarrascoconsultorias-lab/social-media-analysis/main/banner.png" width="100%">
+</p>
+
+## **Social Media Engagement Analysis**
 
 This project simulates a social media dataset and performs a complete end-to-end data analysis workflow. It includes data generation, exploration, cleaning, visualization, and statistical insights, following industry-standard analytical practices. The goal is to demonstrate proficiency in Python, Pandas, Seaborn, and general data-analysis methodology while preparing a professional-grade portfolio artifact.
 
