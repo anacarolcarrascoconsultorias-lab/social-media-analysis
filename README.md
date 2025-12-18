@@ -160,10 +160,15 @@ Potential enhancements include:
  ┣ 📄 README.md
  ┣ 📄 social-media-analysis.ipynb   
  ┗ 📁 images/
-
+```
 ---
 
 👩‍💻 Author
 
 **Ana Carolina Carrasco**
 Data Analytics Portfolio Project – 2025
+
+---
+
+### ⬅️ Back to Portfolio  
+🔗 https://github.com/your-username/portfolio
